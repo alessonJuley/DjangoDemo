@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'drinks',
+    'drinks',                   # this is an edited line
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
