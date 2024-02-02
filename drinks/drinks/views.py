@@ -10,7 +10,7 @@ from rest_framework import status
 
 # function drink_list Reads all the data
 @api_view(['GET','POST'])
-def drink_list(request):
+def drink_list(request, format=None):
           if request.method == 'GET':
                     # get all the drinks (data) by accessing Drink class
                     # serialize python object to json using DrinkSerializer
@@ -30,7 +30,7 @@ def drink_list(request):
                               return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def drink_detail(request, id):
+def drink_detail(request, id, format=None):
           try:
                     drinkObjectID = Drink.objects.get(pk=id)
           except Drink.DoesNotExist:
