@@ -18,7 +18,7 @@ def drink_list(request):
 
                     drinksListObject = Drink.objects.all()
                     serializer = DrinkSerializer(drinksListObject, many=True)
-                    return JsonResponse({'drinks': serializer.data}, safe=False)
+                    return Response(serializer.data)
           if request.method == 'POST':
                     # get json object:list
                     # deserialize json to python object
