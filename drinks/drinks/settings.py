@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'rest_framework',           # this is an edited line
     'drinks',                   # this is an edited line
+    'bread',                    # this is an edited line
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
