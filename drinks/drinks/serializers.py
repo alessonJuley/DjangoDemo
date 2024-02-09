@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Drink
+
 # python object to json
 class DrinkSerializer(serializers.ModelSerializer):
           class Meta:
