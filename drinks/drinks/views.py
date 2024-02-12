@@ -5,6 +5,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
+# created this python file
+
 # endpoints (certain URL that you can access data from)
 # add URL of drink_list in urls.py file after making functions
 
